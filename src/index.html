@@ -1,0 +1,1082 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--Favicon-->
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="img/favicon/site.webmanifest">
+    <link rel="mask-icon" href="img/favicon/safari-pinned-tab.svg" color="#7e64e1">
+    <link rel="shortcut icon" href="img/favicon/favicon.ico">
+    <meta name="msapplication-TileColor" content="#323232">
+    <meta name="msapplication-config" content="img/favicon/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+    <title>PCIA Template</title>
+    <!--SCSS and CSS Styles-->
+    <link rel="stylesheet" href="scss/styles.scss">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="scss/globals.scss">
+    <link rel="stylesheet" href="css/globals.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.2/mdb.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- MDB -->
+      <!-- Font Awesome -->
+      <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet"/>
+      <!-- Google Fonts -->
+      <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet"/>
+      <!-- MDB -->
+      <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/7.0.0/mdb.min.css" rel="stylesheet"/>
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@next/dist/aos.css" rel="stylesheet">
+    <!-- Slick Slider CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Ekko Lightbox CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css" rel="stylesheet">
+  </head>
+  
+  <body class="d-flex flex-column min-vh-100">
+    <!--Navbar-->
+    <nav class="navbar navbar-expand-lg sticky-top px-2 py-2">
+      <div class="container-fluid content-width nav-bg">
+        <a class="navbar-brand" href="#">
+        <img src="https://silicon.createx.studio/assets/img/logo.svg" width="50" height="auto"><b>TEMPLATE</b></a>
+       <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Our Team</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link btn btn-primary text-white fw-bold" href="#">Shop</a>
+            </li>
+            <!--<li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                ZENITH Originals
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">VIOLET</a></li>
+                <li><a class="dropdown-item" href="#">JOYCE</a></li>
+                <li><a class="dropdown-item" href="#">Future Titles</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link">Shop</a>
+            </li>
+          </ul>-->
+        </div>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-end d-lg-none" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header">
+            <a href="index.html" class="text-black">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+              <img src="https://silicon.createx.studio/assets/img/logo.svg" width="50" height="auto"><b> TEMPLATE</b></h5>
+            </a>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav d-lg-none justify-content-end align-items-center flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Our Team</a>
+              </li>
+              <!--<li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  ZENITH Originals
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li>
+                    <hr class="dropdown-divider">
+                  </li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>-->
+              <li class="nav-item">
+                <a class="nav-link" href="#">Portfolio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Shop</a>
+              </li>
+              <li>
+                <a
+                      class="btn btn-outline-dark btn-floating m-1"
+                      class="text-dark"
+                      role="button"
+                      ><i class="fab fa-facebook-f"></i
+                      ></a>
+        
+                    <!-- Twitter -->
+                    <a
+                      class="btn btn-outline-dark btn-floating m-1"
+                      class="text-white"
+                      role="button"
+                      ><i class="fab fa-twitter"></i
+                      ></a>
+        
+                    <!-- Instagram -->
+                    <a
+                      class="btn btn-outline-dark btn-floating m-1"
+                      class="text-white"
+                      role="button"
+                      ><i class="fab fa-instagram"></i
+                      ></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!--Hero Section-->
+    <section class="hero-2">
+      <div class="container content-width col-12 gx-5 custom-padding">
+        <div class="row flex-lg-row-reverse align-items-center g-5 py-5 text-white">
+            <div class="col-11 col-sm-8 col-lg-6 mx-auto">
+                <img class="rounded-2 w-100 shadow-lg" src="https://images.unsplash.com/photo-1530435460869-d13625c69bbf?crop=entropy&amp;cs=tinysrgb&amp;fit=crop&amp;fm=jpg&amp;ixid=MnwzNzg0fDB8MXxzZWFyY2h8MTB8fHdlYnNpdGV8ZW58MHwwfHx8MTYyMTQ0NjkyNg&amp;ixlib=rb-1.2.1&amp;q=80&amp;w=1080&amp;h=768" class="d-block mx-lg-auto img-fluid" alt="" loading="lazy">
+            </div>
+            <div class="col-lg-6">
+                <div class="lc-block mb-3">
+                    <div editable="rich">
+                        <h2 class="fw-bold display-5">Responsive left-aligned hero with image</h2>
+                    </div>
+                </div>
+
+                <div class="lc-block mb-3">
+                    <div editable="rich">
+                        <p class="lead">Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s most popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful JavaScript plugins.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="lc-block d-grid gap-2 d-md-flex justify-content-md-start"><a class="btn btn-primary px-4 me-md-2" href="#" role="button">Click me, I'm a button</a>
+                    <a class="btn btn-outline-secondary px-4 text-white" href="#" role="button">Click me, I'm a button</a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    </section>
+
+    <!--Post Hero Card Items-->
+    <section class="sub-items">
+      <div class="container content-width">
+        <div class="row pt-4">
+          <div class="col-12 gx-5">
+            <div class="row justify-content-center align-items-center py-5">
+              <!--<div class="col-lg-3 col-md-4 col-11 mb-4">
+                  <div class="lc-block">
+                      <h3 class="my-sm-3 mb-2">
+                          <svg width="1em" height="1em" viewBox="0 0 16 16" lc-helper="svg-icon" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                              <path fill-rule="evenodd" d="M9.405 1.05c-.413-1.4-2.397-1.4-2.81 0l-.1.34a1.464 1.464 0 0 1-2.105.872l-.31-.17c-1.283-.698-2.686.705-1.987 1.987l.169.311c.446.82.023 1.841-.872 2.105l-.34.1c-1.4.413-1.4 2.397 0 2.81l.34.1a1.464 1.464 0 0 1 .872 2.105l-.17.31c-.698 1.283.705 2.686 1.987 1.987l.311-.169a1.464 1.464 0 0 1 2.105.872l.1.34c.413 1.4 2.397 1.4 2.81 0l.1-.34a1.464 1.464 0 0 1 2.105-.872l.31.17c1.283.698 2.686-.705 1.987-1.987l-.169-.311a1.464 1.464 0 0 1 .872-2.105l.34-.1c1.4-.413 1.4-2.397 0-2.81l-.34-.1a1.464 1.464 0 0 1-.872-2.105l.17-.31c.698-1.283-.705-2.686-1.987-1.987l-.311.169a1.464 1.464 0 0 1-2.105-.872l-.1-.34zM8 10.93a2.929 2.929 0 1 0 0-5.86 2.929 2.929 0 0 0 0 5.858z"></path>
+                          </svg>
+                          <span class="ms-2" editable="inline">First</span>
+                      </h3>
+                      <div editable="rich">
+                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-lg-3 col-md-4 col-11 mb-4">
+                  <div class="lc-block">
+                      <h3 class="my-sm-3 mb-2">
+                          <svg width="1em" height="1em" viewBox="0 0 16 16" lc-helper="svg-icon" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                              <path fill-rule="evenodd" d="M0 0h1v15h15v1H0V0zm10 3.5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-1 0V4.9l-3.613 4.417a.5.5 0 0 1-.74.037L7.06 6.767l-3.656 5.027a.5.5 0 0 1-.808-.588l4-5.5a.5.5 0 0 1 .758-.06l2.609 2.61L13.445 4H10.5a.5.5 0 0 1-.5-.5z"></path>
+                          </svg>
+                          <span class="ms-2" editable="inline">Second</span>
+                      </h3>
+                      <div editable="rich">
+                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-lg-3 col-md-4 col-11 mb-4">
+                  <div class="lc-block">
+                      <h3 class="my-sm-3 mb-2">
+                          <svg width="1em" height="1em" viewBox="0 0 16 16" lc-helper="svg-icon" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                              <path fill-rule="evenodd" d="M7.765 1.559a.5.5 0 0 1 .47 0l7.5 4a.5.5 0 0 1 0 .882l-7.5 4a.5.5 0 0 1-.47 0l-7.5-4a.5.5 0 0 1 0-.882l7.5-4z"></path>
+                              <path fill-rule="evenodd" d="M2.125 8.567l-1.86.992a.5.5 0 0 0 0 .882l7.5 4a.5.5 0 0 0 .47 0l7.5-4a.5.5 0 0 0 0-.882l-1.86-.992-5.17 2.756a1.5 1.5 0 0 1-1.41 0l-5.17-2.756z"></path>
+                          </svg>
+                          <span class="ms-2" editable="inline">Third</span>
+                      </h3>
+                      <div editable="rich">
+                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                      </div>
+                  </div>
+              </div>-->
+              <div class="col-lg-4 col-md-4 col-12 mb-4">
+                <div class="card">
+                  <div class="card-body">
+                    <h5 class="card-title text h3 fw-bold">Card title</h5>
+                    <h6 class="card-subtitle mb-2 text-body-secondary">Card subtitle</h6>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <!--<a href="#" class="card-link">Card link</a>
+                    <a href="#" class="card-link">Another link</a>-->
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-4 col-12 mb-4">
+                <div class="card">
+                  <div class="card-body">
+                    <h5 class="card-title h3 fw-bold">Card title</h5>
+                    <h6 class="card-subtitle mb-2 text-body-secondary">Card subtitle</h6>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <!--<a href="#" class="card-link">Card link</a>
+                    <a href="#" class="card-link">Another link</a>-->
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-4 col-12 mb-4">
+                <div class="card">
+                  <div class="card-body">
+                    <h5 class="card-title h3 fw-bold">Card title</h5>
+                    <h6 class="card-subtitle mb-2 text-body-secondary">Card subtitle</h6>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <!--<a href="#" class="card-link">Card link</a>
+                    <a href="#" class="card-link">Another link</a>-->
+                  </div>
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </section>
+
+    <!--Content Highlight Section 001-->
+    <section class="content-highlight-1">
+      <div class="container content-width">
+        <div class="row py-5">
+          <div class="col-12 content-width mx-auto gx-5">
+            <div class="row align-items-center justify-content-center">
+              <div class="col-lg-6 col-12 mb-3 mb-lg-0">
+                <img class="shadow-lg w-100 rounded-2" src="https://images.unsplash.com/photo-1682695794816-7b9da18ed470?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="w-100 rounded-2 shadow-md">
+              </div>
+              <div class="col-lg-6 col-12">
+                <h3 class="display-5 fw-bold">Content Highlight 001</h3>
+                <hr>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem deserunt illo alias doloribus, saepe quis.</p>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea sequi fuga molestiae illum illo reiciendis, saepe impedit iste possimus! Repellendus deserunt architecto voluptates. Sapiente repellendus numquam, non officia ipsa maiores.</p>
+                <button class="btn btn-primary btn-lg">Learn More</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--Content Highlight Section 001 Reversed-->
+    <section class="content-highlight-1">
+      <div class="container content-width">
+        <div class="row py-5">
+          <div class="col-12 content-width mx-auto gx-5">
+            <div class="row align-items-center justify-content-center">
+              <div class="col-lg-6 col-12 order-lg-1 order-5">
+                <h3 class="display-5 fw-bold">Content Highlight 001</h3>
+                <hr>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem deserunt illo alias doloribus, saepe quis.</p>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea sequi fuga molestiae illum illo reiciendis, saepe impedit iste possimus! Repellendus deserunt architecto voluptates. Sapiente repellendus numquam, non officia ipsa maiores.</p>
+                <button class="btn btn-primary btn-lg">Learn More</button>
+              </div>
+              <div class="col-lg-6 col-12 order-lg-5 order-1 mb-3 mb-lg-0">
+                <img class="w-100 shadow-lg rounded-2" src="https://images.unsplash.com/photo-1695982207340-d639a7891c0d?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="w-100 rounded-2 shadow-md">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--Services Highlight Section-->
+    <section class="py-5" style="background-color: #131536; color: white;">
+      <div class="container mb-5 mb-md-3 py-5 content-width">
+        <div class="row justify-content-md-center">
+          <div class="col-12 col-md-12 col-lg-8 col-xl-7 col-xxl-6 text-center">
+            <h2 class="mb-4 display-5">Services</h2>
+            <p class="mb-4 mb-md-5 fw-light">Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Pellentesque et neque id ligula mattis commodo.</p>
+            <hr class="w-50 mx-auto mb-0 text-secondary">
+          </div>
+        </div>
+      </div>
+      <div class="container overflow-hidden pb-5 content-width">
+        <div class="row gy-5 gy-md-6 gx-xl-6">
+          <div class="col-12 col-sm-6 col-lg-4">
+            <div class="text-center">
+              <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="#5B4CC1" class="bi bi-1-circle-fill text-primary mb-4" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0ZM9.283 4.002V12H7.971V5.338h-.065L6.072 6.656V5.385l1.899-1.383h1.312Z" />
+              </svg>
+              <h5 class="m-2">SEO Consulting</h5>
+              <p class="m-0 fw-light">Vestibulum bibendum, lorem a blandit lacinia, nisi velit posuere nisl, vel placerat magna mauris mollis maximus est.</p>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-lg-4">
+            <div class="text-center">
+              <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="#5B4CC1" class="bi bi-2-circle-fill text-primary mb-4" viewBox="0 0 16 16">
+                <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0ZM6.646 6.24c0-.691.493-1.306 1.336-1.306.756 0 1.313.492 1.313 1.236 0 .697-.469 1.23-.902 1.705l-2.971 3.293V12h5.344v-1.107H7.268v-.077l1.974-2.22.096-.107c.688-.763 1.287-1.428 1.287-2.43 0-1.266-1.031-2.215-2.613-2.215-1.758 0-2.637 1.19-2.637 2.402v.065h1.271v-.07Z" />
+              </svg>
+              <h5 class="m-2">Web Development</h5>
+              <p class="m-0 fw-light">Vestibulum bibendum, lorem a blandit lacinia, nisi velit posuere nisl, vel placerat magna mauris mollis maximus est.</p>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-md-12 col-lg-4">
+            <div class="text-center">
+              <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="#5B4CC1" class="bi bi-3-circle-fill text-primary mb-4" viewBox="0 0 16 16">
+                <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0Zm-8.082.414c.92 0 1.535.54 1.541 1.318.012.791-.615 1.36-1.588 1.354-.861-.006-1.482-.469-1.54-1.066H5.104c.047 1.177 1.05 2.144 2.754 2.144 1.653 0 2.954-.937 2.93-2.396-.023-1.278-1.031-1.846-1.734-1.916v-.07c.597-.1 1.505-.739 1.482-1.876-.03-1.177-1.043-2.074-2.637-2.062-1.675.006-2.59.984-2.625 2.12h1.248c.036-.556.557-1.054 1.348-1.054.785 0 1.348.486 1.348 1.195.006.715-.563 1.237-1.342 1.237h-.838v1.072h.879Z" />
+              </svg>
+              <h5 class="m-2">Digital Strategy</h5>
+              <p class="m-0 fw-light">Vestibulum bibendum, lorem a blandit lacinia, nisi velit posuere nisl, vel placerat magna mauris mollis maximus est.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!--Card Highlights Section-->
+    <section class="cards">
+      <div class="container content-width">
+        <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
+            <div class="col">
+                <div class="lc-block card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg" lc-helper="background" style="background-image: url('https://images.unsplash.com/photo-1446776811953-b23d57bd21aa?q=80&w=2672&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'); background-size:cover">
+                    <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                        <div class="lc-block pt-5 mt-5 mb-4">
+                            <div editable="rich">
+                                <h2 class="display-6 lh-1 fw-bold">Short title, long jacket</h2>
+                                <p>Quickly design and customize responsive mobile-first sites with Bootstrap.</p>
+                            </div>
+                        </div>
+                        <ul class="lc-block d-flex list-unstyled mt-auto"><a class="btn btn-link btn-sm text-white " href="#" role="button">Read more</a></ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="lc-block card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg" lc-helper="background" style="background:url(https://images.unsplash.com/photo-1517760444937-f6397edcbbcd?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)  center / cover no-repeat;">
+                    <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                        <div class="lc-block pt-5 mt-5 mb-4">
+                            <div editable="rich">
+                                <h2 class="display-6 lh-1 fw-bold">Much longer title that wraps to multiple lines</h2>
+                                <p>Quickly design and customize responsive mobile-first sites with Bootstrap.</p>
+                            </div>
+                        </div>
+                        <ul class="lc-block d-flex list-unstyled mt-auto "><a class="btn btn-link btn-sm text-white " href="#" role="button">Read more</a></ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="lc-block card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg" lc-helper="background" style="background:url(https://images.unsplash.com/photo-1624125276915-39e2afd37438?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)  center / cover no-repeat;">
+                    <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                        <div class="lc-block pt-5 mt-5 mb-4">
+                            <div editable="rich">
+                                <h2 class="display-6 lh-1 fw-bold">Another longer title belongs here</h2>
+                                <p>Quickly design and customize responsive mobile-first sites with Bootstrap.</p>
+                            </div>
+                        </div>
+                        <ul class="lc-block d-flex list-unstyled mt-auto"><a class="btn btn-link btn-sm text-white " href="#" role="button">Read more</a></ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </section>
+
+    <!--Events Section-->
+    <section class="custom-events">
+      <div class="container content-width">
+        <div class="row py-5">
+          <div class="col-12 gx-5">
+            <div class="row py-5">
+              <div class="col-12 pb-4">
+                <h2 class="display-5 fw-bold text-center">Event Information Goes Here</h2>
+                <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus magni nemo tempora animi aliquam? Tenetur, voluptatem nobis! Porro harum, enim, minima quasi perspiciatis quibusdam sit obcaecati cum eius expedita repudiandae amet veritatis. Minus suscipit dolorem possimus consequatur impedit, provident asperiores.</p>
+              </div>
+              <div class="col-lg-4 col-md-4 col-12">
+                <div class="card text-center">
+                  <img src="https://images.unsplash.com/photo-1501281668745-f7f57925c3b4?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="card-img-top w-100" alt="...">
+                  <div class="card-body">
+                    <h4 class="card-title fw-bold">Event Name</h4>
+                    <p class="card-text mb-1"><b>Date:</b> Nov 14, 2023</p>
+                    <p class="card-text mb-1"><b>Time:</b> 5:00 PM MST</p>
+                    <p class="card-text mb-3"><b>Location</b> Random Address Location</p>
+                    <a href="#" class="btn btn-primary">Register Now</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 col-lg-4 col-12">
+                <div class="card text-center">
+                  <img src="https://images.unsplash.com/photo-1501281668745-f7f57925c3b4?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="card-img-top w-100" alt="...">
+                  <div class="card-body">
+                    <h4 class="card-title fw-bold">Event Name</h4>
+                    <p class="card-text mb-1"><b>Date:</b> Nov 14, 2023</p>
+                    <p class="card-text mb-1"><b>Time:</b> 5:00 PM MST</p>
+                    <p class="card-text mb-3"><b>Location</b> Random Address Location</p>
+                    <a href="#" class="btn btn-primary">Register Now</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 col-lg-4 col-12">
+                <div class="card text-center">
+                  <img src="https://images.unsplash.com/photo-1501281668745-f7f57925c3b4?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="card-img-top w-100" alt="...">
+                  <div class="card-body">
+                    <h4 class="card-title fw-bold">Event Name</h4>
+                    <p class="card-text mb-1"><b>Date:</b> Nov 14, 2023</p>
+                    <p class="card-text mb-1"><b>Time:</b> 5:00 PM MST</p>
+                    <p class="card-text mb-3"><b>Location</b> Random Address Location</p>
+                    <a href="#" class="btn btn-primary">Register Now</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--Projects Highlight Section-->
+    <section class="projects">
+      <div class="container my-5">
+
+
+        <!-- Section: Block Content -->
+        <section class="dark-grey-text text-center">
+      
+          <h3 class="text-center font-weight-bold mb-4 pb-2">Our best projects</h3>
+          <p class="text-center text-muted w-responsive mx-auto mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, error amet numquam iure provident voluptate esse quasi, veritatis totam voluptas nostrum quisquam eum porro a pariatur veniam.</p>
+      
+          <!-- Grid row -->
+          <div class="row">
+      
+            <!-- Grid column -->
+            <div class="col-md-6 mb-4">
+      
+              <!-- Card -->
+              <div class="card card-image" style="background-image: url(https://mdbootstrap.com/img/Photos/Horizontal/Nature/6-col/img%20%2873%29.jpg);">
+                <div class="text-white text-center d-flex align-items-center py-5 px-4 px-md-5 rounded" style="background-color: hsla(0, 0%, 0%, 0.6)">
+                  <div>
+                    <h6 class="pink-text">
+                      <i class="fas fa-chart-pie"></i>
+                      <strong> Marketing</strong>
+                    </h6>
+                    <h3 class="py-3 font-weight-bold">
+                      <strong>This is card title</strong>
+                    </h3>
+                    <p class="pb-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat fugiat,
+                      laboriosam, voluptatem, optio vero odio nam sit officia accusamus minus error nisi architecto
+                      nulla ipsum dignissimos. Odit sed qui, dolorum!
+                    </p>
+                    <a class="btn btn-pink btn-rounded btn-md"><i class="fas fa-clone left"></i> View project</a>
+                  </div>
+                </div>
+              </div>
+              <!-- Card -->
+      
+            </div>
+            <!-- Grid column -->
+      
+            <!-- Grid column -->
+            <div class="col-md-6 mb-4">
+      
+              <!-- Card -->
+              <div class="card card-image" style="background-image: url(https://mdbootstrap.com/img/Photos/Horizontal/City/6-col/img%20%2847%29.jpg);">
+                <div class="text-white text-center d-flex align-items-center py-5 px-4 px-md-5 rounded" style="background-color: hsla(0, 0%, 0%, 0.6);">
+                  <div>
+                    <h6 class="green-text">
+                      <i class="fas fa-eye"></i>
+                      <strong> Entertainment</strong>
+                    </h6>
+                    <h3 class="py-3 font-weight-bold">
+                      <strong>This is card title</strong>
+                    </h3>
+                    <p class="pb-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat fugiat,
+                      laboriosam, voluptatem, optio vero odio nam sit officia accusamus minus error nisi architecto
+                      nulla ipsum dignissimos. Odit sed qui, dolorum!
+                    </p>
+                    <a class="btn btn-success btn-rounded btn-md"><i class="fas fa-clone left"></i> View project</a>
+                  </div>
+                </div>
+              </div>
+              <!-- Card -->
+      
+            </div>
+            <!-- Grid column -->
+      
+          </div>
+          <!-- Grid row -->
+      
+        </section>
+        <!-- Section: Block Content -->
+      
+      
+      </div>
+    </section>
+
+    <!--Cascading Cards-->
+    <section class="cascading-cards py-5">
+      <div class="container content-width pb-5">
+        <div class="row">
+          <div class="col-12">
+            <div class="row gx-lg-5">
+
+              <!-- First column -->
+              <div class="col-lg-4 col-md-12 mb-6 mb-lg-0">
+            
+                <div class="card">
+                  <div class="bg-image hover-overlay ripple mx-3 shadow-4-strong rounded-6 mt-n4 data-mdb-ripple-color="light">
+                    <img src="https://mdbootstrap.com/img/new/textures/small/148.jpg" class="img-fluid" />
+                    <a href="#!">
+                      <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                    </a>
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title">AI engine</h5>
+                    <p class="text-muted">
+                      <small>Finished <u>13.09.2021</u> for
+                        <a href="" class="text-dark">Techify</a></small>
+                    </p>
+                    <p class="card-text">
+                      Ut pretium ultricies dignissim. Sed sit amet mi eget urna
+                      placerat vulputate. Ut vulputate est non quam dignissim
+                      elementum. Donec a ullamcorper diam.
+                    </p>
+                    <a href="#!" class="btn btn-secondary btn-rounded">Read more</a>
+                  </div>
+                </div>
+            
+              </div>
+              <!-- First column -->
+            
+              <!-- Second column -->
+              <div class="col-lg-4 mb-6 mb-lg-0">
+            
+                <div class="card">
+                  <div class="bg-image hover-overlay ripple mx-3 shadow-4-strong rounded-6 mt-n4" data-mdb-ripple-color="light">
+                    <img src="https://mdbootstrap.com/img/new/textures/small/38.jpg" class="img-fluid" />
+                    <a href="#!">
+                      <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                    </a>
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title">Balanced design</h5>
+                    <p class="text-muted">
+                      <small>Finished <u>12.01.2022</u> for
+                        <a href="" class="text-dark">Rubicon</a></small>
+                    </p>
+                    <p class="card-text">
+                      Suspendisse in volutpat massa. Nulla facilisi. Sed aliquet
+                      diam orci, nec ornare metus semper sed. Integer volutpat
+                      ornare erat sit amet rutrum. Ut vulputate est non quam.
+                    </p>
+                    <a href="#!" class="btn btn-secondary btn-rounded">Read more</a>
+                  </div>
+                </div>
+            
+              </div>
+              <!-- Second column -->
+            
+              <!-- Third column -->
+              <div class="col-lg-4 mb-6 mb-lg-0">
+            
+                <div class="card">
+                  <div class="bg-image hover-overlay ripple mx-3 shadow-4-strong rounded-6 mt-n4" data-mdb-ripple-color="light">
+                    <img src="https://mdbootstrap.com/img/new/textures/small/55.jpg" class="img-fluid" />
+                    <a href="#!">
+                      <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                    </a>
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title">Metaverse 2.0</h5>
+                    <p class="text-muted">
+                      <small>Finished <u>10.11.2022</u> for
+                        <a href="" class="text-dark">Venom Tech</a></small>
+                    </p>
+                    <p class="card-text">
+                      Curabitur tristique, mi a mollis sagittis, metus felis mattis
+                      arcu, non vehicula nisl dui quis diam. Mauris ut risus eget
+                      massa volutpat feugiat. Donec.
+                    </p>
+                    <a href="#!" class="btn btn-secondary btn-rounded">Read more</a>
+                  </div>
+                </div>
+            
+              </div>
+              <!-- Third column -->
+            
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <!--Call To Action-->
+    <section class="cta-1">
+      <div class="container content-width">
+        <div class="row">
+          <div class="col-12 text-center content-width mx-auto gx-5">
+            <div class="row">
+              <div class="col-12">
+                <h2>Enter Smart CTA In Here</h2>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--Gallery/Portfolio w/ Lighbox-->
+    <section id="portfolio">
+      <div class="container-fluid content-width">
+          <div class="row text-center px-2">
+              <h4 class="display-5 fw-bold text-center mt-4 mb-2">Our Portfolio</h4>
+              <hr class="mt-2 mb-5 mx-auto" style="width: 50%;">
+              <div class="col-12">
+                  <div class="row custom-gutter">
+                      <div class="col-lg-3 col-md-4 col-12 custom-hover mb-3">
+                        <a href="img/portfolio/portfolio_001.jpeg" class="d-block h-100" data-fslightbox data-fslightbox="gallery">
+                          <div class="content">
+                            <div class="content-overlay"></div>
+                              <div class="content-details fadeIn-bottom">
+                                <h3 class="content-title">This is a title</h3>
+                              </div>
+                              <img class="img-fluid" src="img/portfolio/portfolio_001.jpeg" alt="">
+                          </div>
+                        </a>
+                      </div>
+                      
+                      <div class="col-lg-3 col-md-4 col-12 custom-hover mb-3">
+                        <a href="img/portfolio/portfolio_002.jpeg" class="d-block h-100" data-fslightbox data-fslightbox="gallery">
+                          <div class="content">
+                            <div class="content-overlay"></div>
+                              <div class="content-details fadeIn-bottom">
+                                <h3 class="content-title">This is a title</h3>
+                              </div>
+                              <img class="img-fluid" src="img/portfolio/portfolio_002.jpeg" alt="">
+                          </div>
+                        </a>
+                      </div>
+
+                      <div class="col-lg-3 col-md-4 col-12 custom-hover mb-3">
+                        <a href="img/portfolio/portfolio_003.jpeg" class="d-block h-100" data-fslightbox data-fslightbox="gallery">
+                          <div class="content">
+                            <div class="content-overlay"></div>
+                              <div class="content-details fadeIn-bottom">
+                                <h3 class="content-title">This is a title</h3>
+                              </div>
+                              <img class="img-fluid" src="img/portfolio/portfolio_003.jpeg" alt="">
+                          </div>
+                        </a>
+                      </div>
+
+                      <div class="col-lg-3 col-md-4 col-12 custom-hover mb-3">
+                        <a href="img/portfolio/portfolio_004.jpeg" class="d-block h-100" data-fslightbox data-fslightbox="gallery">
+                          <div class="content">
+                            <div class="content-overlay"></div>
+                              <div class="content-details fadeIn-bottom">
+                                <h3 class="content-title">This is a title</h3>
+                              </div>
+                              <img class="img-fluid" src="img/portfolio/portfolio_004.jpeg" alt="">
+                          </div>
+                        </a>
+                      </div>
+
+                      <div class="col-lg-3 col-md-4 col-12 custom-hover mb-3">
+                        <a href="img/portfolio/portfolio_005.jpeg" class="d-block h-100" data-fslightbox data-fslightbox="gallery">
+                          <div class="content">
+                            <div class="content-overlay"></div>
+                              <div class="content-details fadeIn-bottom">
+                                <h3 class="content-title">This is a title</h3>
+                              </div>
+                              <img class="img-fluid" src="img/portfolio/portfolio_005.jpeg" alt="">
+                          </div>
+                        </a>
+                      </div>
+
+                      <div class="col-lg-3 col-md-4 col-12 custom-hover mb-3">
+                        <a href="img/portfolio/portfolio_006.jpeg" class="d-block h-100" data-fslightbox data-fslightbox="gallery">
+                          <div class="content">
+                            <div class="content-overlay"></div>
+                              <div class="content-details fadeIn-bottom">
+                                <h3 class="content-title">This is a title</h3>
+                              </div>
+                              <img class="img-fluid" src="img/portfolio/portfolio_006.jpeg" alt="">
+                          </div>
+                        </a>
+                      </div>
+
+                      <div class="col-lg-3 col-md-4 col-12 custom-hover mb-3">
+                        <a href="img/portfolio/portfolio_007.jpeg" class="d-block h-100" data-fslightbox data-fslightbox="gallery">
+                          <div class="content">
+                            <div class="content-overlay"></div>
+                              <div class="content-details fadeIn-bottom">
+                                <h3 class="content-title">This is a title</h3>
+                              </div>
+                              <img class="img-fluid" src="img/portfolio/portfolio_007.jpeg" alt="">
+                          </div>
+                        </a>
+                      </div>
+
+                      <div class="col-lg-3 col-md-4 col-12 custom-hover">
+                        <a href="img/portfolio/portfolio_008.jpeg" class="d-block h-100" data-fslightbox data-fslightbox="gallery">
+                          <div class="content">
+                            <div class="content-overlay"></div>
+                              <div class="content-details fadeIn-bottom">
+                                <h3 class="content-title">This is a title</h3>
+                              </div>
+                              <img class="img-fluid" src="img/portfolio/portfolio_008.jpeg" alt="">
+                          </div>
+                        </a>
+                      </div>
+
+                      <!--<div class="content">
+                        <div class="col-lg-3 col-md-4 col-12">
+                            <a href="/img/portfolio/portfolio_002.jpeg" class="d-block h-100" data-fslightbox data-fslightbox="gallery">
+                                <img class="img-fluid" src="/img/portfolio/portfolio_002.jpeg" alt="">
+                            </a>
+                        </div>
+                      </div>
+                      <div class="col-lg-3 col-md-4 col-12">
+                          <a href="/img/portfolio/portfolio_003.jpeg" class="d-block h-100" data-fslightbox data-fslightbox="gallery">
+                              <img class="img-fluid" src="/img/portfolio/portfolio_003.jpeg" alt="">
+                          </a>
+                      </div>
+                      <div class="col-lg-3 col-md-4 col-12">
+                          <a href="/img/portfolio/portfolio_004.jpeg" class="d-block h-100" data-fslightbox data-fslightbox="gallery">
+                              <img class="img-fluid" src="/img/portfolio/portfolio_004.jpeg" alt="">
+                          </a>
+                      </div>
+                      <div class="col-lg-3 col-md-4 col-12">
+                          <a href="/img/portfolio/portfolio_005.jpeg" class="d-block h-100" data-fslightbox data-fslightbox="gallery">
+                              <img class="img-fluid" src="/img/portfolio/portfolio_005.jpeg" alt="">
+                          </a>
+                      </div>
+                      <div class="col-lg-3 col-md-4 col-12">
+                          <a href="/img/portfolio/portfolio_006.jpeg" class="d-block h-100" data-fslightbox data-fslightbox="gallery">
+                              <img class="img-fluid" src="/img/portfolio/portfolio_006.jpeg" alt="">
+                          </a>
+                      </div>
+                      <div class="col-lg-3 col-md-4 col-12">
+                          <a href="/img/portfolio/portfolio_007.jpeg" class="d-block h-100" data-fslightbox data-fslightbox="gallery">
+                              <img class="img-fluid" src="/img/portfolio/portfolio_007.jpeg" alt="">
+                          </a>
+                      </div>
+                      <div class="col-lg-3 col-md-4 col-12">
+                          <a href="/img/portfolio/portfolio_008.jpeg" class="d-block h-100" data-fslightbox data-fslightbox="gallery">
+                              <img class="img-fluid" src="/img/portfolio/portfolio_008.jpeg" alt="">
+                          </a>
+                      </div>-->
+                  </div>
+              </div>
+          </div>
+      </div>
+    </section>
+    <!--End of Gallery/Portfolio w/ Lightbox-->
+
+    <!--Modal-->
+    <section id="modal" class="py-5 custom-modal astro-KQTY5QJK">
+      <div class="container bg-dark py-5 rounded-2 shadow-sm astro-KQTY5QJK" data-aos="fade-up">
+          <div class="row astro-KQTY5QJK">
+              <div class="col-12 text-center gx-5 astro-KQTY5QJK">
+                  <div class="row astro-KQTY5QJK">
+                      <div class="col-md-6 gx-5 mx-auto astro-KQTY5QJK">
+                          <p class="h3 fw-bold mb-4 text-white astro-KQTY5QJK">
+                              This is a Modal Sample!
+                          </p>
+                          <!-- Button trigger modal -->
+                          <button type="button" class="btn btn-primary astro-KQTY5QJK" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                              Click to Expand
+                          </button>
+  
+                          <!-- Modal -->
+                          <div class="modal fade astro-KQTY5QJK" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                              <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable astro-KQTY5QJK">
+                                  <div class="modal-content astro-KQTY5QJK">
+                                      <div class="modal-header astro-KQTY5QJK">
+                                          <h1 class="modal-title fs-4 fw-bold astro-KQTY5QJK" id="exampleModalLabel">
+                                              Enter Modal Heading Here
+                                          </h1>
+                                          <button type="button" class="btn-close astro-KQTY5QJK" data-bs-dismiss="modal" aria-label="Close"></button>
+                                      </div>
+                                      <div class="modal-body text-left astro-KQTY5QJK">
+                                          <div class="bg-image hover-zoom rounded astro-KQTY5QJK">
+                                              <img src="https://images.unsplash.com/photo-1699865701680-ef9214d90fbf?q=80&w=3270&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="w-100 shadow astro-KQTY5QJK" alt="img">
+                                          </div>
+                                          <div class="modal-text mt-4 astro-KQTY5QJK">
+                                              <h4 class="fw-bold astro-KQTY5QJK">
+                                                  Heading Goes Here
+                                              </h4>
+                                              <hr class="">
+                                              <p class="">
+                                                  Lorem ipsum dolor sit amet
+                                                  consectetur adipisicing elit.
+                                                  Magni, voluptate! Sequi nostrum
+                                                  beatae aut fuga deleniti dolor
+                                                  corrupti dolorem reiciendis
+                                                  quidem cumque aliquam neque,
+                                                  molestiae nam ipsa, minima quam
+                                                  sapiente, laudantium fugit quo
+                                                  enim? In, aperiam accusantium
+                                                  laborum sint asperiores
+                                              </p>
+                                              <p>
+                                                  Ad recusandae quibusdam omnis
+                                                  deleniti neque aliquam modi
+                                                  molestiae.
+                                              </p>
+                                              <p>
+                                                  Lorem ipsum dolor sit, amet
+                                                  consectetur adipisicing elit.
+                                                  Voluptates quisquam eius
+                                                  deserunt ratione consequatur,
+                                                  beatae aliquid eligendi nobis,
+                                                  quis maxime sequi recusandae
+                                                  earum. Libero hic ut atque,
+                                                  similique illum cupiditate?
+                                              </p>
+                                          </div>
+                                      </div>
+                                      <div class="modal-footer">
+                                          <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+    </section>
+
+
+    <!--Start of FAQ Section-->
+    <section id="faq">
+      <div class="container gx-5 content-width">
+        <div class="row justify-content-center">
+          <div class="col-md-4">
+            <div class="mb-5">
+              <div>
+                <div class="d-flex align-items-center text-center">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="me-3 question_icon" width="45" height="100%" fill="currentColor" class="bi bi-patch-question-fill" viewBox="0 0 16 16">
+                    <path d="M5.933.87a2.89 2.89 0 0 1 4.134 0l.622.638.89-.011a2.89 2.89 0 0 1 2.924 2.924l-.01.89.636.622a2.89 2.89 0 0 1 0 4.134l-.637.622.011.89a2.89 2.89 0 0 1-2.924 2.924l-.89-.01-.622.636a2.89 2.89 0 0 1-4.134 0l-.622-.637-.89.011a2.89 2.89 0 0 1-2.924-2.924l.01-.89-.636-.622a2.89 2.89 0 0 1 0-4.134l.637-.622-.011-.89a2.89 2.89 0 0 1 2.924-2.924l.89.01.622-.636zM7.002 11a1 1 0 1 0 2 0 1 1 0 0 0-2 0zm1.602-2.027c.04-.534.198-.815.846-1.26.674-.475 1.05-1.09 1.05-1.986 0-1.325-.92-2.227-2.262-2.227-1.02 0-1.792.492-2.1 1.29A1.71 1.71 0 0 0 6 5.48c0 .393.203.64.545.64.272 0 .455-.147.564-.51.158-.592.525-.915 1.074-.915.61 0 1.03.446 1.03 1.084 0 .563-.208.885-.822 1.325-.619.433-.926.914-.926 1.64v.111c0 .428.208.745.585.745.336 0 .504-.24.554-.627z"/>
+                  </svg>
+                  <h5 class="display-5 fw-bold">FAQ</h3>
+                </div>
+                <p class="lead">Lorem ipsum dolor sit amet consectetur adipiscing elit sed do.</p>
+                </div>
+            </div>
+          </div>
+          <div class="col-md-6 offset-md-1">
+            <div class="mb-5">
+              <div>
+                <p class="h4 fw-bold">Excepteur sint occaecat cupidatat non? </p>
+                <p>Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+              </div>
+            </div>
+            <div class="mb-5">
+              <div>
+                <p class="h4 fw-bold">Duis aute irure dolor in?</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+              </div>
+            </div>
+            <div class="mb-5">
+              <div>
+                <p class="h4 fw-bold">Consequuntur magni dolores eos qui?</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+              </div>
+            </div>
+            <div class="mb-5">
+              <div>
+                <p class="h4 fw-bold">Nostrum exercitationem ullam corporis? </p>
+                <p>Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--End of FAQ Section-->
+
+    <!--Form Keep-->
+    <section class="form-keep py-5" >
+     <div class="container content-width">
+       <div class="row">
+        <div class="col-12 gx-5">
+          <h4 class="text-center display-4 mb-4">Contact Us For a Quote!</h4>
+          <div class="row">
+            <div class="col-md-10 mx-auto">
+              <div class="rounded-2" id="formkeep-embed" data-formkeep-url="https://formkeep.com/p/e6bc460b49a07201accad8e565024911?embedded=1"></div>
+            <script type="text/javascript" src="https://pym.nprapps.org/pym.v1.min.js"></script>
+            <script type="text/javascript" src="https://formkeep-production-herokuapp-com.global.ssl.fastly.net/formkeep-embed.js"></script>
+            </div>
+          </div>
+        </div>
+      </div>
+     </div>
+    </section>
+
+    <!--Google Map-->
+    <iframe style="line-height: 0;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3168.6367308208655!2d-122.08780922360582!3d37.42206037207641!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fba02425dad8f%3A0x6c296c66619367e0!2sGoogleplex!5e0!3m2!1sen!2sus!4v1699935480377!5m2!1sen!2sus" width="100%" height="450px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+    <!--Footer-->
+    <div class="container-fluid p-0 mt-auto">
+      <footer
+              class="text-center text-lg-start text-white pt-5 pb-3"
+              style="background-color: #131536"
+              >
+        <!-- Grid container -->
+        <div class="container-fluid content-width pb-0 px-4">
+          <!-- Section: Links -->
+          <section class="social">
+            <!--Grid row-->
+            <div class="row">
+              <!-- Grid column -->
+              <div class="col-md-4 col-lg-4 col-xl-4 mt-3">
+                <a href="index.html" class="text-white">
+                  <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+                    <img src="https://silicon.createx.studio/assets/img/logo.svg" width="50" height="auto"><b> TEMPLATE</b></h5>
+                  </a>
+                <p class="mt-3">
+                  Here you can use rows and columns to organize your footer
+                  content. Lorem ipsum dolor sit amet, consectetur adipisicing
+                  elit.
+                </p>
+                <div class="mb-3">
+                  <a
+                    class="btn btn-outline-light btn-floating m-1"
+                    class="text-white"
+                    role="button"
+                    ><i class="fab fa-facebook-f"></i
+                    ></a>
+      
+                  <!-- Twitter -->
+                  <a
+                    class="btn btn-outline-light btn-floating m-1"
+                    class="text-white"
+                    role="button"
+                    ><i class="fab fa-twitter"></i
+                    ></a>
+      
+                  <!-- Instagram -->
+                  <a
+                    class="btn btn-outline-light btn-floating m-1"
+                    class="text-white"
+                    role="button"
+                    ><i class="fab fa-instagram"></i
+                    ></a>
+                  </div>
+              </div>
+              <!-- Grid column -->
+    
+              <hr class="w-100 clearfix d-md-none" />
+    
+              <!-- Grid column -->
+              <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                <h6 class="text-uppercase mb-4 font-weight-bold">
+                  Useful links
+                </h6>
+                <p>
+                  <a class="text-white">About Us</a>
+                </p>
+                <p>
+                  <a class="text-white">Our Team</a>
+                </p>
+                <p>
+                  <a class="text-white">Portfolio</a>
+                </p>
+                <p>
+                  <a class="text-white">Shop</a>
+                </p>
+              </div>
+    
+              <!-- Grid column -->
+              <hr class="w-100 clearfix d-md-none" />
+    
+              <!-- Grid column -->
+              <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                <h6 class="text-uppercase mb-4 font-weight-bold">Contact</h6>
+                <p><i class="fas fa-home mr-3"></i> New York, NY 10012, US</p>
+                <p><i class="fas fa-envelope mr-3"></i> info@gmail.com</p>
+                <p><i class="fas fa-phone mr-3"></i> + 01 234 567 88</p>
+                <p><i class="fas fa-print mr-3"></i> + 01 234 567 89</p>
+              </div>
+              <!-- Grid column -->
+            </div>
+            <!--Grid row-->
+          </section>
+          <!-- Section: Links -->
+    
+          <hr class="my-3">
+    
+          <!-- Section: Copyright -->
+          <section class="pb-3 p-0">
+            <div class="row d-flex align-items-center">
+              <!-- Grid column -->
+              <div class="col-12 text-center">
+                <!-- Copyright -->
+                <div>
+                  © 2023 Copyright |
+                  <a class="text-white" href="https://mdbootstrap.com/"
+                     >webdesign.com</a
+                    >
+                </div>
+                <!-- Copyright -->
+              </div>
+            </div>
+          </section>
+          <!-- Section: Copyright -->
+        </div>
+        <!-- Grid container -->
+      </footer>
+    </div>
+
+    <!--BS5 JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <!-- MDB -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.0/mdb.min.js"></script>
+    <script src="js/nav.js"></script>
+    <!-- jQuery 3.6.1-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="js/aos.js"></script>
+    <!--Ekko Lightbox JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bs5-lightbox@1.8.3/dist/index.bundle.min.js"></script>
+    <script src="js/ekko.js"></script>
+    <!--FS Lightbox JS-->
+    <script src="js/lightbox/fslightbox.js"></script>
+    <!--MDB CDN-->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/7.0.0/mdb.min.js"></script>
+    <!--Custom Scripts-->
+    <!--<script src="js/nav.js"></script>-->
+    
+    <!--Form Keep:Get notified when the form is submitted, add your own code below: -->
+    <script>
+      const formkeepEmbed = document.querySelector('#formkeep-embed')
+      
+      formkeepEmbed.addEventListener('formkeep-embed:submitting', _event => {
+        console.log('Submitting form...')
+      })
+      
+      formkeepEmbed.addEventListener('formkeep-embed:submitted', _event => {
+        console.log('Submitted form...')
+      })
+    </script>
+  </body>
+</html>
